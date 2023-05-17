@@ -59,6 +59,7 @@ endif()
 option(LIBWEBP_SUPPORT "Build with WebP support" ON)
 option(OPENJPEG_SUPPORT "Build with OpenJPEG support" ON)
 option(USE_DEPS "Build with optional dependencies" OFF)
+option(PERFORM_ENDIAN_TEST "Perform endian test" ON)
 
 set(leptonica_INSTALL_CMAKE_DIR
     "lib/cmake/leptonica"

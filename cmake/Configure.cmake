@@ -72,7 +72,9 @@ set(functions_list
 )
 check_functions(functions_list)
 
-test_big_endian(BIG_ENDIAN)
+if(PERFORM_ENDIAN_TEST)
+    test_big_endian(BIG_ENDIAN)
+endif()
 
 if(BIG_ENDIAN)
   set(ENDIANNESS L_BIG_ENDIAN)
